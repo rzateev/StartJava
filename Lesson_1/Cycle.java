@@ -9,15 +9,15 @@ public class Cycle {
         int i = 6;
         while(i >= -6) {
             System.out.println(i);
-            i = i - 2;
+            i -= 2;
         }
 
         System.out.println("do while");
         int sum = 0;
         i = 10;
         do {
-            if(i % 2 !=0) {
-                sum = sum + i;                
+            if(i % 2 != 0) {
+                sum += i;                
                 System.out.println(i);
             }            
             i++;

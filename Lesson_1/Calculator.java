@@ -1,21 +1,15 @@
 import java.util.Scanner;
 
 public class Calculator { 
-    public static void main(String[] args) {
-        int a = 0;
-        int b = 0;
-
+    public static void main(String[] args) {        
         Scanner in = new Scanner(System.in);
         System.out.print("Input operation (+, -, *, /, ^, %): ");
-        String operandAsString = in.nextLine();
-        char operand = operandAsString.charAt(0);
+        char operand = in.nextLine().charAt(0);
 
         System.out.print("Input first number: ");
-        a = in.nextInt();
+        int a = in.nextInt();
         System.out.print("Input second number: ");
-        b = in.nextInt();
-
-        System.out.println("dddd " + operand);
+        int b = in.nextInt();
 
         float result = 0; 
         if (operand == '+') {
@@ -29,7 +23,7 @@ public class Calculator {
         } else if (operand == '^') {
             result = a;
             for (int i = 2; i <= b; i++) {
-                result = result * a;
+                result *= a;
             }
         } else if (operand == '%') {
             result = a % b;
