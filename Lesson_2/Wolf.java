@@ -1,7 +1,7 @@
 public class Wolf {	
     private String name;
-    private Integer age;
-    private Integer weight;
+    private int age;
+    private int weight;
     private String sex;
     private String color;
 
@@ -13,11 +13,11 @@ public class Wolf {
         this.name = name;
     }
 
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(int age) {
         if (age > 8) {
             System.out.println("Некорректный возраст");
         } else {
@@ -25,12 +25,11 @@ public class Wolf {
         }
     }
 
-
-    public Integer getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(Integer  weight) {
+    public void setWeight(int  weight) {
         this.weight = weight;
     }
 
@@ -69,7 +68,4 @@ public class Wolf {
     public void howl() {
         System.out.println("howling");
     }
-
-
-
 }

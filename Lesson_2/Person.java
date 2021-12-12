@@ -1,9 +1,9 @@
 public class Person {	
     String name = "Roman";
-    Integer age = 100;
-    Integer weight = 75;
+    int age = 100;
+    int weight = 75;
     String sex = "man";
-    Integer heigth = 175;
+    int heigth = 175;
 
     void move() {
         System.out.println("moving");
@@ -24,5 +24,4 @@ public class Person {
     void learnJava() {
         System.out.println("learning Java");
     }
-
 }
