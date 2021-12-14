@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class GuessNumber { 
-    private Player playerFirst;
-    private Player playerSecond;
+    private Player firstPlayer;
+    private Player secondPlayer;
 
-    public GuessNumber(Player playerFirst, Player playerSecond) {
-        this.playerFirst = playerFirst;
-        this.playerSecond = playerSecond;
+    public GuessNumber(Player firstPlayer, Player secondPlayer) {
+        this.firstPlayer = firstPlayer;
+        this.secondPlayer = secondPlayer;
     }
 
     public void play() {
@@ -15,23 +15,20 @@ public class GuessNumber {
         boolean currnetUserFirst = true;
         Scanner in = new Scanner(System.in);
         while (userNumber != secretNumber) {
-            if (currnetUserFirst) {
-                System.out.print("Input int number from 0 to 100 First Player: ");
-            } else {
-                System.out.print("Input int number from 0 to 100 Second Player: ");
-            }    
+            System.out.print("Input int number from 0 to 100 "+ (currnetUserFirst? "(first Player):": "(second Player):"));
+            
             userNumber = in.nextInt();
             if (userNumber > secretNumber) {
-                System.out.println("Your number is bigger than secret number: ");                
+                System.out.println("Your number is bigger than secret number: ");
             } else if (userNumber < secretNumber) {
                 System.out.println("Your number is smaller than secret number: ");
             } 
             currnetUserFirst = !currnetUserFirst;
         }
         if (!currnetUserFirst) {
-                System.out.print("Win First Player: "+playerFirst.getName());
+                System.out.println("Win First Player: "+firstPlayer.getName());
             } else {
-                System.out.print("Win Second Player: "+playerSecond.getName());
+                System.out.println("Win Second Player: "+secondPlayer.getName());
             }
     }
 }
