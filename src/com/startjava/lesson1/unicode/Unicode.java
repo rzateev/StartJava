@@ -1,4 +1,4 @@
-package com.startjava.lession_1.unicode;
+package com.startjava.lesson1.unicode;
 
 public class Unicode { 
     public static void main(String[] args) {        

@@ -1,4 +1,4 @@
-package com.startjava.lession_1.animal;
+package com.startjava.lesson2.animal;
 
 public class Wolf {	
     private String name;

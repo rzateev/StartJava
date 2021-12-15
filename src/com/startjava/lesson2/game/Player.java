@@ -1,4 +1,4 @@
-package com.startjava.lession_1.game;
+package com.startjava.lesson2.game;
 
 public class Player { 
     private String name;
